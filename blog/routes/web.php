@@ -32,3 +32,7 @@
 Route::get('/', 'HomeController@home');
 Route::get('/register', 'AuthController@register');
 Route::get('/welcome', 'AuthController@welcome');
+
+Route::get('/master', function() {
+    return view('adminlite.master');
+});
