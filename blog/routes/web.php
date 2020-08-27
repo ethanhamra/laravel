@@ -36,3 +36,11 @@ Route::get('/welcome', 'AuthController@welcome');
 Route::get('/master', function() {
     return view('adminlite.master');
 });
+
+Route::get('/hari3', function(){
+    return view('adminlite.items.index');
+});
+
+Route::get('/hari3/data', function(){
+    return view('adminlite.items.data');
+});
